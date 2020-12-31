@@ -34,10 +34,10 @@
     ],
     'demo_xml': [],
     'description': '''
-        This modules add room reservation, assets management,...
+        This modules setup the base for angular application integration.
     ''',
-    'qweb': ['static/src/xml/*.xml'],
+    'qweb': [],
     'active': False,
     'installable': True,
-    'application': True,
+    'application': False,
 }

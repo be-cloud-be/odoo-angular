@@ -22,6 +22,38 @@
 -->
 <odoo>
 
-    
-    
+    <!-- Application Kanban View -->
+    <record model="ir.ui.view" id="application_kanban_view">
+        <field name="name">angular.application.kanban</field>
+        <field name="model">angular.application</field>
+        <field name="arch" type="xml">
+            <kanban class="o_application_kanban">
+                <field name="name" />
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click o_program_kanban">
+                            <div class="o_kanban_card_header">
+                                <div class="o_kanban_card_header_title">
+                                    <strong><field name="name" /></strong>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+        </field>
+    </record>
+
+
+    <record id="action_applications_kanban_view" model="ir.actions.act_window.view">
+        <field name="sequence" eval="0" />
+        <field name="view_mode">kanban</field>
+        <field name="view_id" ref="application_kanban_view" />
+        <field name="act_window_id" ref="application_kanban_view" />
+    </record>
+
+    <!-- Top menu item -->
+    <menuitem name="Angular Application" id="menu_main_angular" icon="fa-book" web_icon="base_angular,static/description/icon.png" sequence="60" groups="base_angular.group_angular_user" />
+
+    <menuitem id="menu_program_applications" parent="menu_main_angular" action="action_applications_kanban" sequence="10" />
+
 </odoo>
