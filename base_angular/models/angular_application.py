@@ -40,7 +40,7 @@ class AngularApplication(models.Model):
     is_devel_running = fields.Boolean(string="Devel Server", help="True if development server is running")
     
     def action_build(self):
-        # Shoud do ng build
+        # Shoud do ng build and link into static
         pass
     
     def action_start_devel(self):
