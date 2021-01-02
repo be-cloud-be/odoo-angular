@@ -61,7 +61,7 @@
         <field name="sequence" eval="0" />
         <field name="view_mode">kanban</field>
         <field name="view_id" ref="application_kanban_view" />
-        <field name="act_window_id" ref="application_kanban_view" />
+        <field name="act_window_id" ref="action_applications" />
     </record>
 
     <!-- Top menu item -->
