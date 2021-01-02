@@ -25,7 +25,7 @@
     'author': 'be-Cloud.be (Jerome Sonnet)',
     'website': '',
     'category': 'Web',
-    'depends': ['web'],
+    'depends': ['web','mail'],
     'init_xml': [],
     'update_xml': [
         'data/base_angular.xml',
