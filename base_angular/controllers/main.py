@@ -37,6 +37,6 @@ _logger = logging.getLogger(__name__)
 
 class AnngularController(http.Controller):
 
-    @http.route('/','/apps', website=True, auth='public', type='http')
+    @http.route(['/','/apps'], website=True, auth='public', type='http')
     def main_route(self, redirect=None, *args, **kw):
         pass
