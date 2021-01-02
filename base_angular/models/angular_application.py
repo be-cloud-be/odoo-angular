@@ -37,7 +37,7 @@ class AngularApplication(models.Model):
     
     port = fields.Integer(string="Port", help="Network port for the devel server.")
     
-    is_devel_running = fields.Boolean(string=-"Devel Server", help="True if development server is running")
+    is_devel_running = fields.Boolean(string="Devel Server", help="True if development server is running")
     
     def action_build(self):
         pass
