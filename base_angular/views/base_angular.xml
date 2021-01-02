@@ -44,6 +44,18 @@
         </field>
     </record>
 
+    <record id="action_applications" model="ir.actions.act_window">
+      <field name="name">Angular Applications</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">angular.application</field>
+      <field name="view_mode">kanban</field>
+      <field name="context">{}</field>
+      <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+          Click to add an angular application to your server.
+        </p>
+      </field>
+    </record>
 
     <record id="action_applications_kanban_view" model="ir.actions.act_window.view">
         <field name="sequence" eval="0" />
@@ -55,6 +67,6 @@
     <!-- Top menu item -->
     <menuitem name="Angular Application" id="menu_main_angular" icon="fa-book" web_icon="base_angular,static/description/icon.png" sequence="60" groups="base_angular.group_angular_user" />
 
-    <menuitem id="menu_program_applications" parent="menu_main_angular" action="action_applications_kanban" sequence="10" />
+    <menuitem id="menu_program_applications" parent="menu_main_angular" action="action_applications" sequence="10" />
 
 </odoo>
