@@ -29,7 +29,7 @@
     'init_xml': [],
     'update_xml': [
         'data/base_angular.xml',
-        'views/base_angular_view.xml',
+        'views/base_angular.xml',
         'security/ir.model.access.csv',
     ],
     'demo_xml': [],
