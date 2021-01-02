@@ -39,4 +39,5 @@ class AnngularController(http.Controller):
 
     @http.route(['/','/apps'], website=True, auth='public', type='http')
     def main_route(self, redirect=None, *args, **kw):
+        _logger.info('Angular Application Route')
         pass
